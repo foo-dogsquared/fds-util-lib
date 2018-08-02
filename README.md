@@ -42,3 +42,8 @@ For now, the library is just a `.js` with an object so calling this library is j
         - accepts two integers that indicate the range of the return value **including** the maximum integer
         - if it has no parameter values, it will execute the function with (0, 1) as the default values so possible values may be 0 or 1
         - *return value*: same as `randomInt_exc` (except the `max` is included this time)
+    - #### `decimalToBaseN(int, radix)`
+        - accepts two integers: the number to be converted and the radix to be converted to base-*n* (binary or base-2, octal or base-8, hexadecimal or base-16, etc.)
+        - the value of `radix` cannot be less than or equal to 1
+        - basically `Number(x).toString()`, lol
+        - *return value*: a string of the output number
